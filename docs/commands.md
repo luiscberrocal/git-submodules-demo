@@ -27,7 +27,30 @@ Hit enter on `simple_mail` to see the changes in the submodule.
 
 - Pycharm does not commit. We commit in lazygit but it doesnot show the changes in Pycharm.
 
+### Cannot commit submodule changes in lazygit
 
+![lg_error_commiting_submodule_changes.png](images%2Flg_error_commiting_submodule_changes.png)
+
+### Workaround
+
+Change `~/.ssh/config` to use the `id_rsa` key for the submodule repository.
+
+The submodule repository is takeing the default.
+
+
+
+```shell
+Host github.com
+        HostName github.com
+        User git
+        IdentityFile ~/.ssh/github_luis.berrocal.1942
+        #IdentitiesOnly yes
+Host github.com-payjoy
+        HostName github.com
+        User git
+        IdentityFile ~/.ssh/github_payjoy
+        #IdentitiesOnly yes
+```
 ## Pycharm configuration
 
 
