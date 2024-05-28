@@ -11,6 +11,9 @@ git submodule add -b feature/submodules_demo --name simple-mail2 git@github.com:
 
 ## Making changes to submodule
 
+Make a change in the submodule and commit it.
+
+
 
 
 ## Issues
