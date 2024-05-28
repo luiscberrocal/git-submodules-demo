@@ -1,0 +1,3 @@
+[submodule "simple-mail"]
+	path = simple-mail
+	url = git@github.com-lucho:luiscberrocal/simple-mail.git
