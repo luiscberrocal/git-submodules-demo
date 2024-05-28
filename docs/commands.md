@@ -8,8 +8,9 @@ git submodule deinit --all -f
 ```shell
 git submodule add -b feature/submodules_demo --name simple-mail2 git@github.com:luiscberrocal/simple-mail.git simple_mail  
 ```
+## Scenarios
 
-## Making changes to submodule
+### Making changes to submodule in project
 
 Make a change in the submodule and commit it.
 
@@ -20,6 +21,11 @@ Make a change in the submodule and commit it.
 Hit enter on `simple_mail` to see the changes in the submodule.
 
 ![lg_inside_submodule.png](images%2Flg_inside_submodule.png)
+
+Commit
+
+### Making changes on the submoduled repository
+
 
 
 
