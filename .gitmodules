@@ -1,4 +1,4 @@
 [submodule "simple-mail2"]
 	path = simple_mail
-	url = git@github.com:luiscberrocal/simple-mail.git
+	url = git@github.com-lucho:luiscberrocal/simple-mail.git
 	branch = feature/submodules_demo

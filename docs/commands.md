@@ -17,6 +17,11 @@ Make a change in the submodule and commit it.
  - 
 ![lg_git_submodules.png](images%2Flg_git_submodules.png)
 
+Hit enter on `simple_mail` to see the changes in the submodule.
+
+![lg_inside_submodule.png](images%2Flg_inside_submodule.png)
+
+
 
 ## Issues
 
