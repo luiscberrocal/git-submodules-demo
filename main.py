@@ -8,12 +8,12 @@ from simple_mail.email.models import SenderConfig
 
 def print_hi(name):
     # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+    print(f"Hi, {name}")  # Press Ctrl+F8 to toggle the breakpoint.
 
 
 # Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    sender_config = SenderConfig(email='test', password='test')
+if __name__ == "__main__":
+    sender_config = SenderConfig(email="test", password="test")
 
     print(sender_config)
 
