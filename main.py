@@ -1,5 +1,5 @@
 # This is a sample Python script.
-from simple_mail.email.models import SenderConfig
+from simple_mail.email.schema import SenderConfig
 
 
 # Press Shift+F10 to execute it or replace it with your code.

@@ -14,6 +14,12 @@ git submodule add -b feature/submodules_demo --name simple-mail2 git@github.com:
 
 Make a change in the submodule and commit it.
 
+Move to the submodule directory.
+
+```shell
+git pull
+```
+
 ### Running ruff
  - 
 ![lg_git_submodules.png](images%2Flg_git_submodules.png)
