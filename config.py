@@ -1,16 +1,17 @@
-def load_environment_variables(environment_filename: str, source_folder_name: str = ".envs"):
-    from pathlib import Path
+from pathlib import Path
 
-    from dotenv import load_dotenv
+from dotenv import load_dotenv
 
-    def find_envs_folder(current_dir: Path):
+
+def load_environment_variables(environment_filename: str, source_folder_name: str = ".envs") -> Path:
+
+    def find_envs_folder(current_dir: Path):  # noqa: ANN202
         env_folder = current_dir / source_folder_name
         if env_folder.exists():
             return env_folder
-        else:
-            return find_envs_folder(current_dir.parent)
+        return find_envs_folder(current_dir.parent)
 
     environment_folder = find_envs_folder(Path(__file__).parent)
     environment_file = environment_folder / environment_filename
-    print(f'{environment_file} {environment_file.exists()}')
     load_dotenv(dotenv_path=environment_file)
+    return environment_file

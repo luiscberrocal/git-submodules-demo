@@ -13,8 +13,7 @@ if __name__ == "__main__":
     load_environment_variables(environment_filename="email_vars.txt", source_folder_name=".secrets")
     username = os.getenv("EMAIL")
     pwd = os.getenv("PASSWORD")
-    print(f"Username: {username}")
-    print(f"Password: {pwd}")
+    print(f"Username: {username}")  # noqa: T201
 
     sender_config = SenderConfig(email=username, password=pwd)
     email_message = EmailMessage(
@@ -24,6 +23,6 @@ if __name__ == "__main__":
         sender_config=sender_config
     )
     send_email(email_message=email_message)
-    print("Email sent!")
+    print("Email sent!")  # noqa: T201
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
